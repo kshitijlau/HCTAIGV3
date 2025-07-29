@@ -226,7 +226,7 @@ if uploaded_file is not None:
                 st.error("GEMINI_API_KEY not found. Please add it to your Streamlit secrets.")
                 st.stop()
             
-            model = genai.GenerativeModel('gemini-1.5-pro-latest')
+            model = genai.GenerativeModel('gemini-2.5-pro')
             
             results = []
             total_candidates = len(df)
